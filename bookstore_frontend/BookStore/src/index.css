@@ -1,0 +1,86 @@
+body {
+  background: linear-gradient(120deg, #ffe3ec 0%, #fff 100%);
+  min-height: 100vh;
+  background-attachment: fixed;
+  scroll-behavior: smooth;
+  transition: background 0.6s cubic-bezier(.4,2,.6,1);
+}
+
+/* Tuỳ chọn: Làm đẹp thanh cuộn trên Chrome, Edge */
+body::-webkit-scrollbar {
+  width: 10px;
+  background: #ffe3ec;
+  border-radius: 8px;
+  transition: background 0.4s;
+}
+body::-webkit-scrollbar-thumb {
+  background: linear-gradient(120deg, #ff416c 0%, #ff4b2b 100%);
+  border-radius: 8px;
+  animation: thumb-animate 2s cubic-bezier(.4,2,.6,1) infinite;
+  transition: background 0.4s;
+}
+
+@keyframes thumb-animate {
+  0% {
+    box-shadow: 0 0 0 0 #ff416c55;
+  }
+  50% {
+    box-shadow: 0 0 10px 4px #ff416c55;
+  }
+  100% {
+    box-shadow: 0 0 0 0 #ff416c55;
+  }
+}
+:root {
+  --main-bg: linear-gradient(120deg, #ffe3ec 0%, #fff 100%);
+  --card-bg: #fff;
+  --text-main: #222;
+  --header-gradient: linear-gradient(90deg, #ff416c 0%, #ff4b2b 100%);
+  --shadow-main: 0 4px 24px #ff416c22;
+  --primary: #ff416c;
+  --primary-dark: #ff4b2b;
+  --scrollbar-thumb: linear-gradient(120deg, #ff416c 0%, #ff4b2b 100%);
+}
+
+body.dark-mode {
+  --main-bg: linear-gradient(120deg, #232526 0%, #414345 100%);
+  --card-bg: #232526;
+  --text-main: #f3f3f3;
+  --header-gradient: linear-gradient(90deg, #232526 0%, #ff416c 100%);
+  --shadow-main: 0 4px 24px #00000044;
+  --primary: #ff416c;
+  --primary-dark: #ff4b2b;
+  --scrollbar-thumb: linear-gradient(120deg, #232526 0%, #ff416c 100%);
+}
+
+body {
+  background: var(--main-bg);
+  color: var(--text-main);
+  min-height: 100vh;
+  background-attachment: fixed;
+  scroll-behavior: smooth;
+  transition: background 0.6s cubic-bezier(.4,2,.6,1), color 0.4s;
+}
+
+/* Card, header, ... dùng biến màu */
+.list-xinxo-header,
+.newbook-xinxo-header,
+.review-xinxo-header,
+.bd-card,
+.pagination-xinxo {
+  background: var(--card-bg) !important;
+  box-shadow: var(--shadow-main) !important;
+}
+.list-xinxo-header,
+.newbook-xinxo-header,
+.review-xinxo-header {
+  background: var(--header-gradient) !important;
+}
+.bd-title, .bd-price, .review-xinxo-user {
+  color: var(--primary) !important;
+}
+body::-webkit-scrollbar-thumb {
+  background: var(--scrollbar-thumb);
+}
+
+/* ...giữ lại các style khác... */
