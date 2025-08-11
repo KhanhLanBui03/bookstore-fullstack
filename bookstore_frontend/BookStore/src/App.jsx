@@ -26,6 +26,8 @@ import BookForm from "./layouts/admin/BookForm";
 import RequireAdmin from "./layouts/admin/RequireAdmin";
 import AdminDashboard from "./layouts/admin/DashBoard/DashBoard";
 import Sidebar from "./layouts/admin/DashBoard/Sidebar";
+import BookAdmin from "./layouts/admin/BookAdmin";
+import BookManagement from "./layouts/admin/BookAdmin";
 ;
 function App() {
   useEffect(() => {
@@ -67,6 +69,7 @@ function App() {
               <Route path="/test" element={<Test />} />
               <Route path="/admin/book-form" element={<BookForm_Admin />} />
               <Route path="/admin/dashboard" element={<AdminDashboard />} />
+              <Route path="/admin/products" element={<BookManagement />} />
             </Routes>
           </div>
         </div>

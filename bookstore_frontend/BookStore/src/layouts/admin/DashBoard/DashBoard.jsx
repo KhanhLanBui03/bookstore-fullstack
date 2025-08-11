@@ -11,7 +11,7 @@ import RequireAdmin from '../RequireAdmin';
 
 const Dashboard = () => {
   const [data, setData] = useState(null);
-  const chartColors = ['#4f8cff', '#43e97b', '#f7971e', '#a770ef', '#ff6b6b', '#6dd5ed'];
+  // const chartColors = ['#4f8cff', '#43e97b', '#f7971e', '#a770ef', '#ff6b6b', '#6dd5ed'];
   useEffect(() => {
     const fetchDashboard = async () => {
       try {

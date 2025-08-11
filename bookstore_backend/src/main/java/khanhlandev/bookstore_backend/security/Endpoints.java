@@ -21,7 +21,8 @@ public class Endpoints {
     public static final String[] ADMIN_GET_ENDPOINTS = {
             "/user",
             "/user/**",
-            "/admin/dashboard"
+            "/admin/dashboard",
+            "/admin/management-book"
     };
     public static final String[] ADMIN_POST_ENDPOINTS = {
             "/admin/addBook",

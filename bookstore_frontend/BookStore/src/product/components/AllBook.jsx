@@ -97,56 +97,56 @@ const AllBook = ({ keySearch }) => {
                 <Dropdown className="my-4 filter-dropdown">
                     <style>
                         {`
-      .filter-dropdown .dropdown-toggle {
-        background: var(--header-gradient, linear-gradient(90deg, #ff416c 0%, #ff4b2b 100%));
-        color: #fff !important;
-        border: none;
-        font-weight: 700;
-        border-radius: 24px;
-        padding: 10px 28px;
-        box-shadow: 0 2px 12px #ff416c33;
-        transition: background 0.2s, color 0.2s, box-shadow 0.2s;
-      }
-      .filter-dropdown .dropdown-toggle:hover,
-      .filter-dropdown .dropdown-toggle:focus {
-        background: linear-gradient(90deg, #ff4b2b 0%, #ff416c 100%);
-        color: #fff !important;
-        box-shadow: 0 4px 24px #ff416c55;
-      }
-      .filter-dropdown .dropdown-menu {
-        border-radius: 18px;
-        border: 2px solid #ff416c;
-        box-shadow: 0 8px 32px #ff416c22;
-        background: var(--card-bg, #fff);
-        min-width: 220px;
-        padding: 8px 0;
-      }
-      .filter-dropdown .dropdown-item {
-        font-weight: 600;
-        color: #ff416c !important;
-        border-radius: 12px;
-        margin: 2px 8px;
-        transition: background 0.18s, color 0.18s;
-        padding: 10px 18px;
-        font-size: 1rem;
-        display: flex;
-        align-items: center;
-        gap: 8px;
-      }
-      .filter-dropdown .dropdown-item:hover,
-      .filter-dropdown .dropdown-item:focus {
-        background: linear-gradient(90deg, #ff416c11 0%, #ff4b2b11 100%);
-        color: #ff4b2b !important;
-      }
-      .filter-dropdown .dropdown-item.active {
-        background: linear-gradient(90deg, #ff416c 0%, #ff4b2b 100%);
-        color: #fff !important;
-      }
-      .filter-dropdown .dropdown-toggle::after {
-        margin-left: 12px;
-        vertical-align: middle;
-      }
-    `}
+                            .filter-dropdown .dropdown-toggle {
+                                background: var(--header-gradient, linear-gradient(90deg, #ff416c 0%, #ff4b2b 100%));
+                                color: #fff !important;
+                                border: none;
+                                font-weight: 700;
+                                border-radius: 24px;
+                                padding: 10px 28px;
+                                box-shadow: 0 2px 12px #ff416c33;
+                                transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+                            }
+                            .filter-dropdown .dropdown-toggle:hover,
+                            .filter-dropdown .dropdown-toggle:focus {
+                                background: linear-gradient(90deg, #ff4b2b 0%, #ff416c 100%);
+                                color: #fff !important;
+                                box-shadow: 0 4px 24px #ff416c55;
+                            }
+                            .filter-dropdown .dropdown-menu {
+                                border-radius: 18px;
+                                border: 2px solid #ff416c;
+                                box-shadow: 0 8px 32px #ff416c22;
+                                background: var(--card-bg, #fff);
+                                min-width: 220px;
+                                padding: 8px 0;
+                            }
+                            .filter-dropdown .dropdown-item {
+                                font-weight: 600;
+                                color: #ff416c !important;
+                                border-radius: 12px;
+                                margin: 2px 8px;
+                                transition: background 0.18s, color 0.18s;
+                                padding: 10px 18px;
+                                font-size: 1rem;
+                                display: flex;
+                                align-items: center;
+                                gap: 8px;
+                            }
+                            .filter-dropdown .dropdown-item:hover,
+                            .filter-dropdown .dropdown-item:focus {
+                                background: linear-gradient(90deg, #ff416c11 0%, #ff4b2b11 100%);
+                                color: #ff4b2b !important;
+                            }
+                            .filter-dropdown .dropdown-item.active {
+                                background: linear-gradient(90deg, #ff416c 0%, #ff4b2b 100%);
+                                color: #fff !important;
+                            }
+                            .filter-dropdown .dropdown-toggle::after {
+                                margin-left: 12px;
+                                vertical-align: middle;
+                            }
+                            `}
                     </style>
                     <Dropdown.Toggle id="dropdown-basic">
                         <span role="img" aria-label="filter">🔎</span> Lọc theo thể loại
