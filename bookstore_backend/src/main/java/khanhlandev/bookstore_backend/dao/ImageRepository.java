@@ -7,4 +7,5 @@ import org.springframework.stereotype.Repository;
 
 @RepositoryRestResource(path = "images")
 public interface ImageRepository extends JpaRepository<Image,Integer> {
+
 }
